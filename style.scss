@@ -1,0 +1,72 @@
+@media only screen and (min-width:768px)
+{
+    body{background-color:blue;}
+    .grid {
+        background-color: blue;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-gap:10%;
+        padding:10%;
+        font-size:140%;
+    }
+    .grid > section {
+        background-color: blue;
+        text-align: center;
+        padding: 30% 0;
+        
+        
+    }
+    
+}
+@media only screen and (max-width:299px){
+    body{background-color:#7fff00;}
+    .grid{ 
+        background-color: green;
+        display:grid;
+        grid-template-columns: auto ;
+        grid-gap:2%;
+        padding:2%;
+        font-size: 98%;
+        
+    }
+    .grid > section {
+        background-color: green;
+        text-align: left;
+        padding: 10% 0;
+        
+    }
+        
+}
+@media only screen and (max-width:767px)and (min-width:300px){
+    .grid{ 
+        background-color: red;
+        display:grid;
+        grid-template-columns: auto auto auto  ;
+        grid-gap:2%;
+        padding:2%;
+        font-size: 110%;
+    }
+    .grid > section {
+        background-color: green;
+        text-align: center;
+        padding: 5% 0;
+        
+    }
+        #small {
+            grid-column:1 / span 2;
+
+        }
+        #large {
+            grid-column: auto;
+        }
+        #medium {
+            grid-column:1/ span 3;
+        }
+}
+
+
+
+
+
+
+
